@@ -8,5 +8,8 @@ Rails.application.routes.draw do
     get "/posts/:id" => "posts#show"
     patch "/posts/:id" => "posts#update"
     delete "/posts/:id" => "posts#destroy"
+
+    get "/comments" => "comments#index"
+    post "/comments" => "comments#create"
   end
 end
